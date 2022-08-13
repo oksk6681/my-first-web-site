@@ -1,0 +1,21 @@
+#main-section {
+    width: 96%;
+    height: 500px;
+    margin: 1%;
+    padding: 1%;
+    background-color: grey;
+}
+
+#main-section-1 {
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+#main-section-2 {
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+    float: left;
+}

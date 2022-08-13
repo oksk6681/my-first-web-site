@@ -1,0 +1,52 @@
+* {
+    margin: 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+input[id="menuicon"] {
+    display: none;
+    background-color: blue;
+}
+
+input[id="menuicon"]+label {
+    display: block;
+    margin: 30px;
+    width: 60px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[id="menuicon"]+label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #000;
+    transition: all .35s;
+}
+
+
+
+input[id="menuicon"]:checked+label {
+    z-index: 2;
+}
+
+
+
+div[class="sidebar"] {
+    width: 10%;
+    height: 100%;
+    background: rgba(149, 137, 137, 0.682);
+    position: fixed;
+    top: 0;
+    left: -10%;
+    z-index: 1;
+    transition: all .35s;
+}
+
+input[id="menuicon"]:checked+label+div {
+    left: 0;
+}
